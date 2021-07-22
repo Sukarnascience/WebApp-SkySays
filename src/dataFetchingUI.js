@@ -10,7 +10,7 @@ function DataFetching(){
     const [dataIN,setDataIN] = useState();
     const [fetchError,setFetchError] = useState(false);
 
-    const APIKey = "061148ba192e7b43e1d51475a4de51ab";
+    const APIKey = "/* Your Key */";
     const fetchData = (e) =>{
         e.preventDefault(); 
         axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${APIKey}`)
